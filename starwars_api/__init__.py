@@ -43,7 +43,7 @@ class SwapiClient:
         except urllib.error.URLError as e:
             raise SwapiError(f"connection failure: {e.reason}") from e
         except TimeoutError as e:
-            raise SwapiError(f"tempo limite excedido: {e}") from e
+            raise SwapiError(f"timeout exceeded: {e}") from e
  
     def list_resource(self, category: str, page: int = 1, limit: int = 10) -> dict:
         url = f"{self.base_url}/{category}?page={page}&limit={limit}"
