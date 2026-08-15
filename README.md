@@ -43,7 +43,7 @@ Python standard library only (`urllib`, `json`) — no external dependencies.
 
 ```bash
 cd cli
-python3 -m holonet_terminal
+python3 -m starwars_api
 ```
 
 Navigate the numbered menu, use `n`/`p` to page through results, type a record's number to open its detail view, `v` to go back, and `q` to quit.
@@ -54,8 +54,8 @@ The package is split into two files with distinct responsibilities:
 
 | File | Responsibility |
 |---|---|
-| `holonet_terminal/__init__.py` | Everything: `SwapiClient` (HTTP + JSON access layer), presentation helpers (`show_list`, `show_detail`, `format_value`), and the control loop (`main`, `browse_category`) |
-| `holonet_terminal/__main__.py` | Package entrypoint — lets you run `python -m holonet_terminal`; imports `main` from `__init__.py` and calls it |
+| `starwars_api/__init__.py` | Everything: `SwapiClient` (HTTP + JSON access layer), presentation helpers (`show_list`, `show_detail`, `format_value`), and the control loop (`main`, `browse_category`) |
+| `starwars_api/__main__.py` | Package entrypoint — lets you run `python -m starwars_api`; imports `main` from `__init__.py` and calls it |
 
 Inside `__init__.py`, the three concerns are still kept apart even though they live in one file:
 
