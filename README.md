@@ -17,7 +17,7 @@ A command-line data-exploration prototype for the [SWAPI](https://swapi.tech) (S
 star_wars_api/
 │   └── starwars_api/
 │       ├── __init__.py            # SwapiClient + CLI logic
-│       └── __main__.py            # entrypoint (python -m holonet_terminal)
+│       └── __main__.py            # entrypoint (python -m starwars_api)
 ├── README.md
 └── README.pt-BR.md
 ```
