@@ -43,7 +43,7 @@ Apenas biblioteca padrão do Python (`urllib`, `json`) — nenhuma dependência 
 
 ```bash
 cd cli
-python3 -m holonet_terminal
+python3 -m starwars_api
 ```
 
 Navegue pelo menu numérico, use `n`/`p` para paginar, digite o número do registro para abrir o detalhe, `v` para voltar e `q` para sair.
@@ -54,8 +54,8 @@ O pacote é dividido em dois arquivos com responsabilidades distintas:
 
 | Arquivo | Responsabilidade |
 |---|---|
-| `holonet_terminal/__init__.py` | Tudo: `SwapiClient` (camada de acesso HTTP + JSON), funções de apresentação (`show_list`, `show_detail`, `format_value`) e o loop de controle (`main`, `browse_category`) |
-| `holonet_terminal/__main__.py` | Entrypoint do pacote — permite rodar `python -m holonet_terminal`; importa `main` de `__init__.py` e chama |
+| `starwars_api/__init__.py` | Tudo: `SwapiClient` (camada de acesso HTTP + JSON), funções de apresentação (`show_list`, `show_detail`, `format_value`) e o loop de controle (`main`, `browse_category`) |
+| `starwars_api/__main__.py` | Entrypoint do pacote — permite rodar `python -m holonet_terminal`; importa `main` de `__init__.py` e chama |
 
 Dentro de `__init__.py`, as três responsabilidades continuam separadas mesmo vivendo no mesmo arquivo:
 
