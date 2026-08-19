@@ -14,15 +14,10 @@ Protótipo de explorador de dados em linha de comando para a [SWAPI](https://swa
 ## Estrutura do repositório
 
 ```
-holonet-terminal/
-├── cli/
-│   └── holonet_terminal/
-│       ├── __init__.py            # SwapiClient + lógica do CLI
-│       └── __main__.py            # entrypoint (python -m holonet_terminal)
-├── docs/
-│   └── screenshots/
-├── .gitignore
-├── LICENSE
+star_wars_api/
+│   └── starwars_api/
+│       ├── __init__.py            # SwapiClient + CLI logic
+│       └── __main__.py            # entrypoint (python -m starwars_api)
 ├── README.md
 └── README.pt-BR.md
 ```
